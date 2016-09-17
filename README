@@ -1,0 +1,18 @@
+>> installing a npm grunt library
+
+|| npm install grunt-contrib-concat --save-dev ||
+
+automatically saves the info to the package.json file_exists
+
+
+>> using single command to load all the grunt libraries
+
+- grunt.loadNpmTasks('grunt-contrib-uglify');
+- grunt.loadNpmTasks('grunt-contrib-concat');
++ require('load-grunt-tasks')(grunt);
+
+|| npm i --save-dev load-grunt-tasks ||
+
+>> executing watch task
+
+|| grunt watch ||
